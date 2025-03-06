@@ -1,51 +1,17 @@
-/* General styles */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:aliceblue;
-    color:ghostwhite
+    background-color: whitesmoke;
+    color: #4A69BD;
+    text-align: center; 
+}
 
-/* Header styles */
 h1, h2, h3 {
-    text-align: center;
     color: #4A69BD;
 }
 
-/* Navigation styles */
-nav {
-    background-color: #6A89CC;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: aliceblue;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #A8DADC;
-}
-
-/* Link styles */
-a {
-    color: #6A89CC;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #82CCDD;
-}
-
-/* Section styles */
-h3 {
-    margin-top: 30px;
-    font-size: 22px;
-}
 
 h1 {
     font-size: 50px;
@@ -57,14 +23,62 @@ h2 {
     margin-top: 10px;
 }
 
+/* Navigation styles */
+nav {
+    background-color: #6A89CC;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #A8DADC;
+}
+
+/* Link styling */
+a {
+    color: #6A89CC;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #82CCDD;
+}
+
+/* Section styling */
+h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #4A69BD;
+}
+
 br {
     margin: 10px 0;
+}
+
+/* Button-like styling for sign up/login links */
+a:active, a:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
     nav {
         font-size: 14px;
+        padding: 10px;
     }
 
     h1 {
@@ -78,5 +92,8 @@ br {
     h3 {
         font-size: 20px;
     }
-}
 
+    a {
+        font-size: 16px;
+    }
+}
