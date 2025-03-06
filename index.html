@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RentMatch - Homepage</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RentMatch - Homepage</title>
+   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="rentedlistings.html">Rented Listings</a>
-        <a href="interestform.html">Interest Form</a>
-        <a href="listofrenters.html">List of Renters</a>
-        <a href="activetenent.html">Active Tenants</a>
-        <a href="avaliablelistings.html">Avaliable Listings</a>
-        <a href="studenthomepage.html">Student Homepage</a>
-        <a href="homeownersignup.html">List a Property</a>
-        <a href="homeownerprofile.html">View Homeowner</a>
-        <a href="homeownersignup.html">List a Property</a>
-        <a href="contactlisthomeowner.html">Homeowner Contact Info</a>
-    </nav>
-    <h1>RentMatch</h1>
-    <h2>Rent Made Simple</h2>
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="rentedlistings.html">Rented Listings</a>
+      <a href="interestform.html">Interest Form</a>
+      <a href="listofrenters.html">List of Renters</a>
+      <a href="activetenent.html">Active Tenants</a>
+      <a href="avaliablelistings.html">Avaliable Listings</a>
+      <a href="homeownersignup.html">List a Property</a>
+      <a href="contactlisthomeowner.html">Homeowner Contact</a>
+   </nav>
+   <h1>RentMatch</h1>
+   <h2>Rent Made Simple</h2>
+<!-- Homeowner Section -->
+    <div class="section-container">
+        <h3>Homeowner?</h3>
+       <br>
+        <div class="section homeowner-section">
+            <button onclick="window.location.href='homeowner_form.html'">Sign up as Homeowner</button>
+            <br><br>
+            <button onclick="window.location.href='homeowner_home.html'">Login as Homeowner</button>
+        </div>
+    </div>
 
-    <h3>Homeowner?</h3>
-    <a href="homeowner_form.html">Sign up as Homeowner</a>  
-    <br>or  
-    <br><a href="homeowner_home.html">Login as Homeowner</a>
+    <div class="section-container">
+        <h3>College student?</h3>
+       <br>
+        <div class="section college-student-section">
+            <button onclick="window.location.href='renter_form.html'">Sign up as Renter</button>
+            <br><br>
+            <button onclick="window.location.href='listings.html'">Login as Renter</button>
+        </div>
+    </div>
 
-    <h3>College student?</h3>
-    <a href="renter_form.html">Sign up as Renter</a>  
-    <br>or  
-    <br><a href="listings.html">Login as Renter</a>
-
-    <h3>Curious?</h3>
-    <a href="#">About us</a>
-</body>
-</html>
+<h3 class="curious-title">Curious?</h3>
+<a href="#" class="curious-link">About us</a>
