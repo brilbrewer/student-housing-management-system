@@ -25,27 +25,34 @@
     <h3>Renter Interest Form</h3>
 
     <div class="form-box">
-        <form>
+        <form action="interestform.php" method="POST">
             <label>First Name:</label>
-            <input type="text"><br>
-
+            <input type="text" name="form-fname"><br>
+    
+    
             <label>Last Name:</label>
-            <input type="text"><br>
-
+            <input type="text" name="form-lname"><br>
+    
+    
             <label>Phone:</label>
-            <input type="tel"><br>
-
+            <input type="tel" name="form-phone"><br>
+    
+    
             <label>Email:</label>
-            <input type="email"><br>
-
+            <input type="email" name="form-email"><br>
+    
+    
             <label>Move In Date:</label>
-            <input type="date"><br>
-
+            <input type="date" name="form-move-in"><br>
+    
+    
             <label>How many bedrooms are you looking for?</label>
-            <input type="number"><br>
-
+            <input type="number" name="form-bedrooms"><br>
+    
+    
             <button type="submit">Submit</button>
         </form>
+       
     </div>
 </body>
 
