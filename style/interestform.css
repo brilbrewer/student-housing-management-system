@@ -89,3 +89,30 @@ nav a {
 nav a:hover {
     color: navy;
 }
+
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    color: #4a69bd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;;
+}
+
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #f0f4f8;
+}
+
+
+h2 {
+    font-size: 28px;
+    margin-top: 50px;
+    color: #4a69bd;
+}

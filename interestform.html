@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renter Interest Form</title>
-    <link rel="stylesheet" href="interestform.css">
+    <link rel="stylesheet" href="style/interestform.css">
 </head>
 
 <body>
@@ -25,33 +25,33 @@
     <h3>Renter Interest Form</h3>
 
     <div class="form-box">
-        <form action="interestform.php" method="POST">
-            <label>First Name:</label>
-            <input type="text" name="form-fname"><br>
+        <div class="form-box">
+            <form action="php/interestform.php" method="POST">
+                <label>First Name:</label>
+                <input type="text" name="form-fname" required><br>
     
+                <label>Middle Name:</label>
+                <input type="text" name="form-mname" required><br>
     
-            <label>Last Name:</label>
-            <input type="text" name="form-lname"><br>
+                <label>Last Name:</label>
+                <input type="text" name="form-lname" required><br>
     
+                <label>Phone:</label>
+                <input type="tel" name="form-phone" required><br>
     
-            <label>Phone:</label>
-            <input type="tel" name="form-phone"><br>
+                <label>Email:</label>
+                <input type="email" name="form-email" required><br>
     
+                <label>Desired Rent Amount:</label>
+                <input type="number" name="form-rentamt" required><br>
     
-            <label>Email:</label>
-            <input type="email" name="form-email"><br>
+                <label>Move In Date:</label>
+                <input type="date" name="form-move-in" required><br>
     
+                <label>How many bedrooms are you looking for?</label>
+                <input type="number" name="form-bedrooms"  required><br>
     
-            <label>Move In Date:</label>
-            <input type="date" name="form-move-in"><br>
-    
-    
-            <label>How many bedrooms are you looking for?</label>
-            <input type="number" name="form-bedrooms"><br>
-    
-    
-            <button type="submit">Submit</button>
-        </form>
+                <button type="submit">Submit</button>
        
     </div>
 </body>
