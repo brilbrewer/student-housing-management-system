@@ -18,7 +18,7 @@ $con = mysqli_connect("db.luddy.indiana.edu", "i308s25_dss4", "lilts0002kicky", 
 if (!$con) {
     die("<p> Failed to connect to MySQL: " . mysqli_connect_error() . "</p>");
 }
-echo "<p> Established a connection.</p>";
+
 
 // 2) Get and validate form values
 $fname    = $_POST['form-fname'];
