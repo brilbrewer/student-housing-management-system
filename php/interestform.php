@@ -19,6 +19,7 @@ if (!$con) {
     die("<p> Failed to connect to MySQL: " . mysqli_connect_error() . "</p>");
 }
 
+// mysql -h db.luddy.indiana.edu -u i308s25_team22 --password=waled0502ajuga -D i308s25_team22
 
 // 2) Get and validate form values
 $fname    = $_POST['form-fname'];
