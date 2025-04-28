@@ -1,3 +1,12 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Renter Submission</title>
+    <link rel="stylesheet" href="../style/interestform.css">
+</head>
+<body>
+
 <?php
 // Show all PHP errors
 ini_set('display_errors', 1);
@@ -5,7 +14,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // 1) Connect to database
-$con = mysqli_connect("db.luddy.indiana.edu", "i308s25_team22", "waled0502ajuga", "i308s25_team22");
+$con = mysqli_connect("db.luddy.indiana.edu", "i308s25_dss4", "lilts0002kicky", "i308s25_dss4");
 if (!$con) {
     die("<p> Failed to connect to MySQL: " . mysqli_connect_error() . "</p>");
 }
