@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Listings</title>
+    <link rel="stylesheet" href="style/available-listings.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rentedlistings.html">Rented Listings</a>
+        <a href="interestform.html">Interest Form</a>
+        <a href="listofrenters.html">List of Renters</a>
+        <a href="activetenent.html">Active Tenants</a>
+        <a href="availablelistings.html">Available Listings</a>
+        <a href="homeownersignup.html">List a Property</a>
+        <a href="contactlisthomeowner.html">Homeowner Contact</a>
+    </nav>
+
+    <h1>RentMatch</h1>
+    <h2>Available Listings</h2>
+
+    <form action="php/availablelistings.php" method="post">
+        <label for="bedroom-sort">Sort by Bedrooms:</label>  
+        <select id="bedroom-sort" name="bedrooms" required>
+            <option value="">Select number of bedrooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="listing-box">
+        <h3>Studio for 1 Bedroom</h3>
+        <img src="Images_for_site/cS.jpg" alt="Cool Studio Image" width="300" height="200">
+    </div>
+
+    <div class="listing-box">
+        <h3>Apartment for 2 Bedrooms</h3>
+        <img src="Images_for_site/cA.jpg" alt="Cool Apartment Image" width="300" height="200">
+    </div>
+
+    <div class="listing-box">
+        <h3>Townhouse for 3 Bedrooms</h3>
+        <img src="Images_for_site/cT.jpg" alt="Cool Townhouse Image" width="300" height="200">
+    </div>
+
+    <div class="listing-box">
+        <h3>House for 4 Bedrooms</h3>
+        <img src="Images_for_site/cH.jpg" alt="Cool House Image" width="300" height="200">
+    </div>
+
+</body>
+</html>

@@ -18,7 +18,7 @@
         <a href="contactlisthomeowner.html">Homeowner Contact</a>
     </nav>
     <h1>RentMatch</h1>
-    <h2>Active Tenants</h2>
+    <h2>Homeowner contact list</h2>
     <?php
     $con=mysqli_connect("db.luddy.indiana.edu","i308s25_team22","waled0502ajuga", "i308s25_team22");
     if (!$con)

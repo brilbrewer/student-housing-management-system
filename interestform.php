@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Renter Submission</title>
-    <link rel="stylesheet" href="../style/interestform.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renter Submission</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+   <nav>
+      <a href="index.html">Home</a>
+      <a href="rentedlistings.html">Rented Listings</a>
+      <a href="interestform.html">Interest Form</a>
+      <a href="listofrenters.html">List of Renters</a>
+      <a href="activetenent.html">Active Tenants</a>
+      <a href="availablelistings.html">Avaliable Listings</a>
+      <a href="homeownersignup.html">List a Property</a>
+      <a href="contactlisthomeowner.html">Homeowner Contact</a>
+   </nav>
+
+<h1>Select an Active Tenant and Date Range</h1>
+
+<form action="activetenants.php" method="POST">
+    <label for="renter">Choose a tenant:</label>
+    <select name="renter_id" id="renter" required>
+        <option value="">--Select a Tenant--</option>
+        
+        <?php
+        // Connect to the database
+        $con = mysqli_connect("db.luddy.indiana.edu", "i308s25_team22", "waled0502ajuga", "i308s25_team22");
+        if (!$con) {
+            die("<p>Failed to connect to MySQL: " . mysqli_connect_error() . "</p>");
+        }
+
+        // Query to get active renters
+        $query = "SELECT RenterID, Name_f, Name_l FROM Renters WHERE Renter_Status = 'Active' ORDER BY Name_l, Name_f";
+        $result = mysqli_query($con, $query);
+
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<option value='" . $row['RenterID'] . "'>" . htmlspecialchars($row['Name_f']) . " " . htmlspecialchars($row['Name_l']) . "</option>";
+        }
+
+        mysqli_close($con);
+        ?>
+
+    </select>
+    <br><br>
+
+    <label for="start_date">Start Date:</label>
+    <input type="date" name="start_date" id="start_date" required>
+    <br><br>
+
+    <label for="end_date">End Date:</label>
+    <input type="date" name="end_date" id="end_date" required>
+    <br><br>
+
+    <input type="submit" value="View Rent Payments">
+</form>
+
+</body>
+</html>
